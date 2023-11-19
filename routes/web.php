@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PolicyController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CategorieController;
 
@@ -22,6 +23,8 @@ use App\Http\Controllers\CategorieController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+
+Route::get('/confidentialite', [PolicyController::class, 'confidentialite'])->name('confidentialite');
 
 
 // Routes for cart
